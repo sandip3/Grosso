@@ -195,8 +195,8 @@ body {
 
     .m-title {
         font-size: 2.5rem;
-        padding: 5vh 0;
-        text-wrap: wrap;
+        padding:  0;
+        /* text-wrap: wrap; */
     }
 
     .content h1 {
