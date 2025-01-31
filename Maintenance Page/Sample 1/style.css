@@ -96,7 +96,7 @@ body {
     height: 15vh;
     width: 10vw;
     position: absolute;
-    bottom: 0;
+    top: 0;
     will-change: transform;
     z-index: 0;
 }
@@ -144,37 +144,37 @@ body {
     }
 }
 
-/* fruit animation */
+/* Fruit animation */
 @keyframes fruit-left {
     0% {
-        transform: translate(0, 100%) rotate(45deg);
+        transform: translate(0, 0) rotate(45deg);
         opacity: 0;
     }
 
     50% {
-        transform: translate(50vw, -50vh) rotate(45deg);
+        transform: translate(50vw, 50vh) rotate(45deg);
         opacity: 1;
     }
 
     100% {
-        transform: translate(100vw, -100vh) rotate(45deg);
+        transform: translate(100vw, 100vh) rotate(45deg);
         opacity: 0;
     }
 }
 
 @keyframes fruit-right {
     0% {
-        transform: translate(0, 100%) rotate(-45deg);
+        transform: translate(0, 0) rotate(-45deg);
         opacity: 0;
     }
 
     50% {
-        transform: translate(-50vw, -50vh) rotate(-45deg);
+        transform: translate(-50vw, 50vh) rotate(-45deg);
         opacity: 1;
     }
 
     100% {
-        transform: translate(-100vw, -100vh) rotate(-45deg);
+        transform: translate(-100vw, 100vh) rotate(-45deg);
         opacity: 0;
     }
 }
@@ -195,7 +195,7 @@ body {
 
     .m-title {
         font-size: 2.5rem;
-        padding:  0;
+        padding: 0;
         /* text-wrap: wrap; */
     }
 
@@ -221,39 +221,49 @@ body {
     .fruit-L-2,
     .fruit-R-2 {
         width: 100px;
+
+    }
+
+    .fruit-L-2{
+        left: 100px;
+    }
+
+    .fruit-R-2{
+        right: 100px;
     }
 
     /* fruit animations for mobile */
+    /* Fruit animation */
     @keyframes fruit-left {
         0% {
-            transform: translate(0, 100%) rotate(12deg);
+            transform: translate(0, 10) ;
             opacity: 0;
         }
 
         50% {
-            transform: translate(50vw, -50vh) rotate(12deg);
+            transform: translate(20vw, 50vh) ;
             opacity: 1;
         }
 
         100% {
-            transform: translate(100vw, -100vh) rotate(12deg);
+            transform: translate(40vw, 100vh) ;
             opacity: 0;
         }
     }
 
     @keyframes fruit-right {
         0% {
-            transform: translate(0, 100%) rotate(-12deg);
+            transform: translate(0, 0) ;
             opacity: 0;
         }
 
         50% {
-            transform: translate(-50vw, -50vh) rotate(-12deg);
+            transform: translate(-20vw, 50vh) ;
             opacity: 1;
         }
 
         100% {
-            transform: translate(-100vw, -100vh) rotate(-12deg);
+            transform: translate(-40vw, 100vh) ;
             opacity: 0;
         }
     }
